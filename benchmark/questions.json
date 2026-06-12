@@ -1,0 +1,52 @@
+[
+    {
+        "id": "q01",
+        "question": "What architecture did the original transformer paper propose?",
+        "ground_truth": "The original transformer paper proposed an encoder-decoder architecture based on multi-head self-attention mechanisms, introduced in the 2017 paper Attention Is All You Need by Google researchers."
+    },
+    {
+        "id": "q02",
+        "question": "How does BERT differ from the original transformer architecture?",
+        "ground_truth": "BERT uses only the encoder portion of the transformer and is pre-trained using masked language modelling and next sentence prediction, allowing it to build bidirectional representations of text."
+    },
+    {
+        "id": "q03",
+        "question": "What is cosine similarity used for in information retrieval?",
+        "ground_truth": "Cosine similarity measures the angle between two vectors in high-dimensional space and is used to compare document and query embeddings to find the most semantically similar results."
+    },
+    {
+        "id": "q04",
+        "question": "How do vector databases store and retrieve data?",
+        "ground_truth": "Vector databases store high-dimensional embedding vectors alongside documents and use approximate nearest neighbour algorithms to retrieve the most similar vectors to a query embedding."
+    },
+    {
+        "id": "q05",
+        "question": "What is retrieval augmented generation?",
+        "ground_truth": "Retrieval augmented generation is a technique that combines a retrieval system with a language model, fetching relevant documents from a knowledge base and providing them as context to the model before generating an answer."
+    },
+    {
+        "id": "q06",
+        "question": "What is the role of attention in transformer models?",
+        "ground_truth": "Attention mechanisms allow transformer models to weigh the relevance of each token in the context window relative to every other token, enabling the model to capture long-range dependencies and contextualise each token based on surrounding content."
+    },
+    {
+        "id": "q07",
+        "question": "How are word embeddings used in semantic search?",
+        "ground_truth": "Word embeddings map words or sentences to dense vectors in a continuous space where semantically similar terms are geometrically close, enabling semantic search systems to retrieve documents by meaning rather than exact keyword match."
+    },
+    {
+        "id": "q08",
+        "question": "What makes large language models different from earlier NLP models?",
+        "ground_truth": "Large language models are trained on vastly larger corpora with billions of parameters using transformer architectures, enabling emergent capabilities like few-shot learning, reasoning, and instruction following that earlier models could not perform."
+    },
+    {
+        "id": "q09",
+        "question": "What is approximate nearest neighbour search?",
+        "ground_truth": "Approximate nearest neighbour search is an algorithm that finds vectors close to a query vector in high-dimensional space without exhaustively comparing every vector, trading a small amount of accuracy for large gains in speed."
+    },
+    {
+        "id": "q10",
+        "question": "How does semantic search differ from keyword search?",
+        "ground_truth": "Semantic search retrieves documents based on the meaning and intent of a query using vector similarity, whereas keyword search retrieves documents based on exact or fuzzy term matching without understanding context or meaning."
+    }
+]
