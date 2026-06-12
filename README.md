@@ -1,10 +1,10 @@
-# 🚀 Advanced-RAG-Toolkit
+# Advanced-RAG-Toolkit
 
 An advanced, production-grade Retrieval-Augmented Generation (RAG) system implementing state-of-the-art query expansion, retrieval enhancement, context compression, and comprehensive LLM-as-a-judge evaluations.
 
 ---
 
-## 🏗️ Architecture Workflow
+## rchitecture Workflow
 
 The pipeline utilizes **Query Decomposition**, **Hypothetical Document Embeddings (HyDE)**, **Context Compression (Sentence Filtering)**, and **Multi-Metric Evaluation**.
 
@@ -28,21 +28,21 @@ graph TD
 
 ---
 
-## ✨ Features
+## Features
 
-- **🔍 Query Decomposition**: Deconstructs complex queries into 2-4 granular sub-queries to ensure complete coverage.
-- **🧠 Hypothetical Document Embeddings (HyDE)**: Generates hypothetical, factual documents for each sub-query to bridge the vocabulary gap during semantic search.
-- **✂️ Context Compression**: Compresses retrieved passages sentence-by-sentence to extract only directly relevant info, keeping context windows clean.
-- **📊 Robust Evaluation Suite**: LLM-as-a-judge scorers for:
+- **Query Decomposition**: Deconstructs complex queries into 2-4 granular sub-queries to ensure complete coverage.
+- **Hypothetical Document Embeddings (HyDE)**: Generates hypothetical, factual documents for each sub-query to bridge the vocabulary gap during semantic search.
+- **Context Compression**: Compresses retrieved passages sentence-by-sentence to extract only directly relevant info, keeping context windows clean.
+- **Robust Evaluation Suite**: LLM-as-a-judge scorers for:
   - **Faithfulness**: Factuality of the generated answer against the context.
   - **Answer Relevance**: Embedding-based similarity between user query and answer.
   - **Context Precision**: The proportion of retrieved chunks that survive compression.
   - **Ground Truth Similarity**: Cosine similarity between the answer and gold-standard references.
-- **⚡ CLI Interface**: Rich visual output, tables, and progress bars.
+- **CLI Interface**: Rich visual output, tables, and progress bars.
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 This repository uses [uv](https://github.com/astral-sh/uv) for fast Python package management.
 
@@ -64,7 +64,7 @@ ollama pull qwen2.5-coder:3b
 
 ---
 
-## 🚀 Usage Guide
+## Usage Guide
 
 The application is controlled via a simple command-line interface in [main.py](file:///home/shreyanth/Projects/HyDE/main.py).
 
@@ -102,7 +102,7 @@ uv run python main.py clear
 
 ---
 
-## 📊 Evaluation & Benchmarking
+## Evaluation & Benchmarking
 
 The evaluation suite tests the toolkit against a set of predefined benchmark QA pairs located in [benchmark/questions.json](file:///home/shreyanth/Projects/HyDE/benchmark/questions.json).
 
@@ -112,16 +112,3 @@ uv run python main.py eval --show-answers
 ```
 
 Results are saved automatically to `benchmark/results/` as a timestamped JSON file (e.g., `eval_20260612_154707.json`).
-
----
-
-## 📁 Project Structure
-
-- 📝 [main.py](file:///home/shreyanth/Projects/HyDE/main.py): CLI commands and terminal entrypoint.
-- ⚙️ [pipeline.py](file:///home/shreyanth/Projects/HyDE/pipeline.py): Orchestrator logic coordinating decomposition, retrieval, compression, and synthesis.
-- 🔄 [decompose.py](file:///home/shreyanth/Projects/HyDE/decompose.py): Splits complex questions into atomic queries.
-- 💡 [hyde.py](file:///home/shreyanth/Projects/HyDE/hyde.py): Generates hypothetical answers to query vector DBs.
-- 📂 [ingest.py](file:///home/shreyanth/Projects/HyDE/ingest.py): Tokenizes, embeds, and loads documents into ChromaDB.
-- 🗜️ [compress.py](file:///home/shreyanth/Projects/HyDE/compress.py): Retains only context sentences relevant to sub-queries.
-- 📐 [scorers.py](file:///home/shreyanth/Projects/HyDE/scorers.py): Implementation of RAG evaluation metrics.
-- 🧪 [eval.py](file:///home/shreyanth/Projects/HyDE/eval.py): Orchestrates evaluation benchmarks across a QA set.
