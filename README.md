@@ -1,6 +1,6 @@
 # Advanced-RAG-Toolkit
 
-An advanced, production-grade Retrieval-Augmented Generation (RAG) system implementing state-of-the-art query expansion, retrieval enhancement, context compression, and comprehensive LLM-as-a-judge evaluations.
+A Retrieval-Augmented Generation (RAG) system implementing query expansion, retrieval enhancement, context compression, and comprehensive LLM-as-a-judge evaluations.
 
 ---
 
