@@ -4,7 +4,7 @@ An advanced, production-grade Retrieval-Augmented Generation (RAG) system implem
 
 ---
 
-## rchitecture Workflow
+## Architecture Workflow
 
 The pipeline utilizes **Query Decomposition**, **Hypothetical Document Embeddings (HyDE)**, **Context Compression (Sentence Filtering)**, and **Multi-Metric Evaluation**.
 
